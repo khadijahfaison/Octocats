@@ -1,0 +1,44 @@
+.octodex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.authors > li > a > img {
+  width: 20px;
+}
+
+.octocat > a > img {
+  width: 320px;
+  border: 1.3px solid rgb(189, 189, 189);
+  border-radius: 3px;
+  margin: 8px;
+}
+
+ul {
+  list-style: none;
+}
+
+.image-number {
+  color: rgb(189, 189, 189);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.image-caption {
+  color: rgb(0, 0, 0);
+}
+
+.image-footer {
+  border-bottom: 1px solid rgb(189, 189, 189);
+  margin: 8px;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+a {
+  font-style: none;
+}
