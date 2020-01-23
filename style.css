@@ -7,6 +7,7 @@
 
 .authors > li > a > img {
   width: 20px;
+  position: relative;
 }
 
 .octocat > a > img {
@@ -15,9 +16,27 @@
   border-radius: 3px;
   margin: 8px;
 }
+.octocat::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #cccccf transparent transparent transparent;
+  position: absolute;
+  top: 330px;
+  left: 313px;
+}
+
+.octocat {
+  position: relative;
+}
 
 ul {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
 }
 
 .image-number {
@@ -27,12 +46,18 @@ ul {
 }
 
 .image-caption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: rgb(0, 0, 0);
+  font-size: 13px;
 }
 
 .image-footer {
   border-bottom: 1px solid rgb(189, 189, 189);
   margin: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .image-number::before {
@@ -40,5 +65,8 @@ ul {
 }
 
 a {
-  font-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
 }
